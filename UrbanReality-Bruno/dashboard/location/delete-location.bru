@@ -1,0 +1,30 @@
+meta {
+  name: delete-location
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/admin/location/695379a69035b9fa75f54711
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjk0ZmRkMTQzZjAzNGRlOTA4ZjhiMjNhIiwicm9sZSI6InN1cGVyLWFkbWluIiwiaWRlbnRpZmllciI6eyJpZGVudGlmaWVyIjoiYWRtaW5AdXJiYW5yZWFsdHkuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6NX0sImlhdCI6MTc2NzA3MzY4OSwiZXhwIjoyMzcxODczNjg5fQ.GvlEL7coRit1Ca4KVuJC9J5sbRKfrnJK-Y88TLsn4xg
+}
+
+body:json {
+  {
+    "city": {
+      "en": "Abu12 Dhabi",
+      "ar": "أبو ظبي"
+    }
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

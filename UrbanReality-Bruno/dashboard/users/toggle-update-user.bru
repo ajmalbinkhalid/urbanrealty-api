@@ -1,0 +1,21 @@
+meta {
+  name: toggle-update-user
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{baseUrl}}/admin/users/695387c743bc9df9e6647484/status
+  body: none
+  auth: inherit
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

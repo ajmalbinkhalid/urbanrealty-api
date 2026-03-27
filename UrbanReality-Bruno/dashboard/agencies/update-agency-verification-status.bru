@@ -1,0 +1,33 @@
+meta {
+  name: update-agency-verification-status
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/admin/agencies/6964de27cd720549ee54578a/verification-status?status=reject
+  body: json
+  auth: inherit
+}
+
+params:query {
+  status: reject
+}
+
+body:json {
+  {
+   "status":"reject",
+    "remarks":"rejected  because no email verified"
+   
+  }
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

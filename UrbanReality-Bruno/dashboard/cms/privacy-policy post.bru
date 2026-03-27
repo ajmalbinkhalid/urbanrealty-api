@@ -1,0 +1,41 @@
+meta {
+  name: privacy-policy post
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/admin/cms/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type":"1",
+    "privacyPolicy": {
+      "pageTitle": {
+        "en": "Privacy Policy",
+        "ar": "سياسة الخصوصية"
+      },
+      "description": {
+        "en": "Last Updated: January 1, 2026\n\nYour privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.\n\n1. Information We Collect\nWe may collect personal information such as your name, email address, phone number, and profile details.\nWe also collect technical information including IP address, browser type, device information, and usage data.\n\n2. How We Use Your Information\nWe use your information to provide and improve our services, communicate with you, ensure security, and comply with legal obligations.\n\n3. Cookies and Tracking Technologies\nWe may use cookies to enhance user experience, analyze website traffic, and personalize content.\n\n4. Data Sharing\nWe do not sell your personal data. We may share information with service providers or authorities if required by law.\n\n5. Data Security\nWe implement appropriate security measures to protect your information, but no method of transmission over the internet is 100% secure.\n\n6. Your Rights\nYou may have the right to access, correct, or request deletion of your personal data.\n\n7. Contact Us\nEmail: support@example.com\nPhone: +91 99999 99999",
+        "ar": "آخر تحديث: 1 يناير 2026\n\nخصوصيتك مهمة بالنسبة لنا. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند استخدام موقعنا وخدماتنا.\n\n1. المعلومات التي نجمعها\nقد نجمع معلومات شخصية مثل الاسم والبريد الإلكتروني ورقم الهاتف.\nكما نجمع معلومات تقنية مثل عنوان IP ونوع المتصفح وبيانات الاستخدام.\n\n2. كيفية استخدام المعلومات\nنستخدم معلوماتك لتحسين خدماتنا والتواصل معك وضمان الأمان والامتثال للقوانين.\n\n3. ملفات تعريف الارتباط\nقد نستخدم ملفات تعريف الارتباط لتحسين تجربة المستخدم وتحليل حركة المرور.\n\n4. مشاركة البيانات\nلا نقوم ببيع بياناتك الشخصية. قد نشارك المعلومات مع مزودي الخدمات أو الجهات القانونية عند الحاجة.\n\n5. أمان البيانات\nنطبق إجراءات أمان مناسبة لحماية معلوماتك.\n\n6. حقوقك\nقد يكون لديك الحق في الوصول إلى بياناتك أو تصحيحها أو طلب حذفها.\n\n7. تواصل معنا\nالبريد الإلكتروني: support@example.com\nالهاتف: +91 99999 99999"
+      }
+    }
+  }
+  
+}
+
+body:multipart-form {
+  privacyPolicy.pageTitle.en: How It Works
+  privacyPolicy.pageTitle.ar: Worksكيف يعمل
+  privacyPolicy.description.en: description for privacy
+  type: 1
+  privacyPolicy.description.ar: description for privacy ar
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

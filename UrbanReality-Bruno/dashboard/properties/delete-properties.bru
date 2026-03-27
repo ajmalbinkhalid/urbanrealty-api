@@ -1,0 +1,16 @@
+meta {
+  name: delete-properties
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/admin/properties/69673af55fa0a98d6fe3ac16
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: delete-subcategories
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/admin/categories/6957a04c71944a4a73c62010
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

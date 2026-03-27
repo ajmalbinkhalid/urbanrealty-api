@@ -1,0 +1,20 @@
+meta {
+  name: get-one-amenity
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/admin/amenity/6954b7a901816e362741ae3e
+  body: json
+  auth: inherit
+}
+
+body:multipart-form {
+  name.en: Test
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

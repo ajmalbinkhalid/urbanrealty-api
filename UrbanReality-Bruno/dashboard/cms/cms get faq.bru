@@ -1,0 +1,20 @@
+meta {
+  name: cms get faq
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/app/user/cms/faq?locale=en
+  body: none
+  auth: inherit
+}
+
+params:query {
+  locale: en
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

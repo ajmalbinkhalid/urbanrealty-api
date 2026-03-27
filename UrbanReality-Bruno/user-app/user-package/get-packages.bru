@@ -1,0 +1,25 @@
+meta {
+  name: get-packages
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/app/user/packages/?type=promotion&locale=en
+  body: none
+  auth: bearer
+}
+
+params:query {
+  type: promotion
+  locale: en
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUzOTVlNTRmZmQ4NDI2MjM0ZDJjM2YiLCJpZGVudGlmaWVyIjp7ImlkZW50aWZpZXIiOiJ6dWhhMi50ZXN0NUB1cmJhbnJlYWx0eS5jb20iLCJpZGVudGlmaWVyVHlwZSI6ImVtYWlsIiwic291cmNlIjozfSwiaWF0IjoxNzY3NzY0ODk4LCJleHAiOjIzNzI1NjQ4OTh9.xC_w1BpOwjpwsfD8UXXmFVzZTJ0tLjxaGezj7YPBwKM
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

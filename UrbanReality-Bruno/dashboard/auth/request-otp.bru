@@ -1,0 +1,20 @@
+meta {
+  name: request-otp
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/admin/auth/request-otp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"email":"admin@urbanrealty.com"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

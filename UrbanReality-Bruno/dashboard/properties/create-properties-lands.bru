@@ -1,0 +1,52 @@
+meta {
+  name: create-properties-lands
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/admin/properties/
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VuY3lJZCI6IjY5NmYyYzYyYWM0YzllNzAyMTA1NDQwNSIsImFnZW5jeVRlYW1JZCI6IjY5NmYyYzYyYWM0YzllNzAyMTA1NDQwNyIsInJvbGUiOiJhZG1pbiIsImlkZW50aWZpZXIiOnsiaWRlbnRpZmllciI6InRlc3RAZ21haWwuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6MX0sImlhdCI6MTc2ODk4MDE3NywiZXhwIjoyMzczNzgwMTc3fQ.Odsiq0oMuRB7vkfQ9IJDC-XOLyomLhJfTWEUMn7LFw8
+}
+
+body:multipart-form {
+  purpose: 1
+  propertyCategoryId: 1
+  propertyInformation.title.en: sampleee
+  propertyInformation.title.ar: FEWشقة فاخرة
+  propertyInformation.description.en: Nice flats
+  propertyInformation.description.ar: شقة جميلة
+  propertyInformation.landmark.en: Near Metro
+  propertyInformation.landmark.ar: قريب من المترو
+  propertyInformation.locationId: 6960d73ad0e7ccc1adcdcc72
+  propertyInformation.location.latitude: 25.2048
+  propertyInformation.location.longitude: 55.2708
+  propertyInformation.area: 1200
+  propertyInformation.propertySubCategoryId: 69672d91cf40a2111c3fea45
+  propertyInformation.price: 250000
+  propertyInformation.possessionStatus: 1
+  keyFeatures.totalFloor: 10
+  keyFeatures.propertyAge: 5
+  keyFeatures.customerShip: 1
+  keyFeatures.propertyCondition: 1
+  keyFeatures.zoneType: 2
+  keyFeatures.locationHub: 3
+  keyFeatures.furnishing: 2
+  amenities: 69638f55bd7ecef027332b42
+  coverImage: @file(C:\Users\ABHINAND\Downloads\image-svgrepo-com.svg)
+  galleryImages[]: @file(C:\Users\ABHINAND\Downloads\image-svgrepo-com.svg)
+  keyFeatures.floorNumber: 2
+  amenities: 69638f55bd7ecef027332b42
+  keyFeatures.noOfBedroom: 2
+  keyFeatures.noOfBathroom: 2
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

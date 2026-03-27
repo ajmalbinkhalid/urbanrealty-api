@@ -1,0 +1,16 @@
+meta {
+  name: amenities
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/app/user/amenities
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

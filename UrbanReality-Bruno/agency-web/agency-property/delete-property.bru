@@ -1,0 +1,20 @@
+meta {
+  name: delete-property
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/web/agency/properties/6964a5fd89f3bd53a5f0a4ed
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VuY3lJZCI6IjY5NWUyNzBiOGFkMjAwMmM1NTBiNGRlYSIsImFnZW5jeVRlYW1JZCI6IjY5NWUyNzBiOGFkMjAwMmM1NTBiNGRlYyIsInJvbGUiOiJhZG1pbiIsImlkZW50aWZpZXIiOnsiaWRlbnRpZmllciI6InNoYW1hLnRlc3Q2QHVyYmFucmVhbHR5LmNvbSIsImlkZW50aWZpZXJUeXBlIjoiZW1haWwiLCJzb3VyY2UiOjJ9LCJpYXQiOjE3NjgyMDA2OTYsImV4cCI6MjM3MzAwMDY5Nn0.XwuhtfcbnVgwwLFbjAK7pQTb-2QteCuM6CHRfmXMI00
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,30 @@
+meta {
+  name: delete
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/admin/amenities/6960cf77be833fbb9b4a5e75
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": {
+      "en": "Gym",
+      "ar": "نادي رياضي"
+    }
+  }
+  
+}
+
+body:multipart-form {
+  name.en: Test
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

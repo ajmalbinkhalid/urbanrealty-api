@@ -1,0 +1,20 @@
+meta {
+  name: toggle-subcategories 
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/admin/categories/6957a04c71944a4a73c62010/status
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjk0ZmRkMTQzZjAzNGRlOTA4ZjhiMjNhIiwicm9sZSI6InN1cGVyLWFkbWluIiwiaWRlbnRpZmllciI6eyJpZGVudGlmaWVyIjoiYWRtaW5AdXJiYW5yZWFsdHkuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6NX0sImlhdCI6MTc2NzM0NDM4MywiZXhwIjoyMzcyMTQ0MzgzfQ.Ei_jHW60klVlBj3X7YYfU0Y_ZI4EZGSWjNm3_UZnvFI
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

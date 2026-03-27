@@ -1,0 +1,30 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/app/agency/auth/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "test55",
+    "lastName": "test78",
+    "email": "asif0085test3@urbanrealty.com",
+    "phone":{
+      "phoneCode":"91",
+      "phoneNumber":"4878512844" 
+    },
+    "company": "Urbanhub  Pvt Ltd",
+    "cRNumber": "CR-UR-2025-9011"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

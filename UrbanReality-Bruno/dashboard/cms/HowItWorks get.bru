@@ -1,0 +1,20 @@
+meta {
+  name: HowItWorks get
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/app/user/cms/how-it-works?locale=en
+  body: none
+  auth: inherit
+}
+
+params:query {
+  locale: en
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

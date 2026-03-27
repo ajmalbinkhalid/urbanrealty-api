@@ -1,0 +1,33 @@
+meta {
+  name: create-enquiry
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/user/enquiries/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUzOTU5MjRmZmQ4NDI2MjM0ZDJjMWQiLCJpZGVudGlmaWVyIjp7ImlkZW50aWZpZXIiOiJ6dWhhMS50ZXN0NUB1cmJhbnJlYWx0eS5jb20iLCJpZGVudGlmaWVyVHlwZSI6ImVtYWlsIiwic291cmNlIjo0fSwiaWF0IjoxNzY3ODYzODQyLCJleHAiOjIzNzI2NjM4NDJ9.wdhod3dY4SO90c5Kllf90R1Cq0si4ZQ0WDunE3lWSeM
+}
+
+body:json {
+  {
+    "name": "Rahul Kumar",
+    "email": "rahul.kumar@example.com",
+    "phone": {
+      "phoneCode": "+91",
+      "phoneNumber": "9876543210"
+    },
+    "message": "I want more details about your services."
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

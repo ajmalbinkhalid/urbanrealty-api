@@ -1,0 +1,29 @@
+meta {
+  name: create-enquiry
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/app/user/enquiries/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "ajmal khalid",
+    "email": "abhinandjalaraj5@gmail.com",
+    "phone": {
+      "phoneCode": "+91",
+      "phoneNumber": "8714419174"
+    },
+    "message": "I want to know  more details about your services on property."
+  }
+    
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

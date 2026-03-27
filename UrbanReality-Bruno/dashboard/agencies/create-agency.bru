@@ -1,0 +1,37 @@
+meta {
+  name: create-agency
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/admin/agencies/
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "ABHIII",
+    "lastName": "ABHIII",
+    "phone": "8989898989",
+    "email": "test89@test.com",
+    "companyName": "Test 9889",
+    "cRNumber": "HELLO8989"
+  }
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+  phone.phoneCode: 91
+  phone.phoneNumber: 1234567557
+  email: sampleemail@realty.com
+  companyName: feafagg43e
+  cRNumber: 234FBGT
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

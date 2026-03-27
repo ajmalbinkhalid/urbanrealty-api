@@ -1,0 +1,21 @@
+meta {
+  name: update-agency-status
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/admin/agencies/695387c743bc9df9e6647484/status
+  body: none
+  auth: inherit
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

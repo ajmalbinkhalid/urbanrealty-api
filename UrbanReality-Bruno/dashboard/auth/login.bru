@@ -1,0 +1,23 @@
+meta {
+  name: login
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/admin/auth/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "admin@urbanrealty.com",
+    "password": "admin123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

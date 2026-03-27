@@ -1,0 +1,20 @@
+meta {
+  name: get-all-amenity
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/admin/amenities/
+  body: json
+  auth: inherit
+}
+
+body:multipart-form {
+  name.en: Test
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,30 @@
+import express, { type Router } from "express";
+import { AuthMiddleware } from "@/middleware/AuthMiddleware";
+import { AgencyRouter } from "./main-routes/AgencyRouter";
+import { AmenityRouter } from "./main-routes/AmenityRouter";
+import { AdminAuthRouter } from "./main-routes/AuthRouter";
+import { CmsRoute } from "./main-routes/CmsRouter";
+import { EnquiryRouter } from "./main-routes/EnquiryRouter";
+import { GeneralSettingsRouter } from "./main-routes/GeneralSettingsRouter";
+import { HomeRouter } from "./main-routes/HomeRouter";
+import { LocationRouter } from "./main-routes/LocationRouter";
+import { PackageRouter } from "./main-routes/PackageRoute";
+import { PropertyRouter } from "./main-routes/PropertyRouter";
+import { SubCategoryRouter } from "./main-routes/SubCategoryRouter";
+import { UserRouter } from "./main-routes/UserRouter";
+
+export const DashboardRouter: Router = express.Router();
+
+DashboardRouter.use("/auth", AdminAuthRouter);
+DashboardRouter.use(AuthMiddleware.admin);
+DashboardRouter.use("/home", HomeRouter);
+DashboardRouter.use("/amenities", AmenityRouter);
+DashboardRouter.use("/agencies", AgencyRouter);
+DashboardRouter.use("/users", UserRouter);
+DashboardRouter.use("/locations", LocationRouter);
+DashboardRouter.use("/categories", SubCategoryRouter);
+DashboardRouter.use("/properties", PropertyRouter);
+DashboardRouter.use("/enquiries", EnquiryRouter);
+DashboardRouter.use("/packages", PackageRouter);
+DashboardRouter.use("/general-settings", GeneralSettingsRouter);
+DashboardRouter.use("/cms", CmsRoute);

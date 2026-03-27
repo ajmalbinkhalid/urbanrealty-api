@@ -1,0 +1,30 @@
+meta {
+  name: update-amenity
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/admin/amenity/6954b7a901816e362741ae3e
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": {
+      "en": "Gym",
+      "ar": "نادي رياضي"
+    }
+  }
+  
+}
+
+body:multipart-form {
+  name.en: Test
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

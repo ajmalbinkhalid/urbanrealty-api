@@ -1,0 +1,31 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/app/agency/auth/request-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJsb2dpbiIsImlkZW50aWZpZXJEYXRhIjp7InNvdXJjZSI6MSwiaWRlbnRpZmllciI6ImFiaGluYW5kLnRlc3QzQHVyYmFucmVhbHR5LmNvbSIsImlkZW50aWZpZXJUeXBlIjoiZW1haWwifSwiaWF0IjoxNzY2NDc3OTM4LCJleHAiOjE3NjY0NzgxMTh9.xgFpXJgOBcnhIUQlqHoy8g_A9GbQ_OslfumDazOdTOo
+}
+
+body:json {
+  {
+  //   "phone": "48785128488484",
+    "email": "asif0084test3@urbanrealty.com"
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:4500/api
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

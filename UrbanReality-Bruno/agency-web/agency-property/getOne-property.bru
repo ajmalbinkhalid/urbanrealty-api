@@ -1,0 +1,77 @@
+meta {
+  name: getOne-property
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/web/agency/properties/create-property
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VuY3lJZCI6IjY5NWUyNzBiOGFkMjAwMmM1NTBiNGRlYSIsImFnZW5jeVRlYW1JZCI6IjY5NWUyNzBiOGFkMjAwMmM1NTBiNGRlYyIsInJvbGUiOiJhZG1pbiIsImlkZW50aWZpZXIiOnsiaWRlbnRpZmllciI6InNoYW1hLnRlc3Q2QHVyYmFucmVhbHR5LmNvbSIsImlkZW50aWZpZXJUeXBlIjoiZW1haWwiLCJzb3VyY2UiOjJ9LCJpYXQiOjE3NjgyMDA2OTYsImV4cCI6MjM3MzAwMDY5Nn0.XwuhtfcbnVgwwLFbjAK7pQTb-2QteCuM6CHRfmXMI00
+}
+
+body:json {
+  {
+    "purpose": 2,
+    "propertyCategoryId": 2,
+  
+    "propertyInformation": {
+      "title": {
+        "en": "rooms for rent",
+        "ar": "شقة 3 غرف للبيع"
+      },
+      "description": {
+        "en": "Spacious apartment near city center",
+        "ar": "شقة واسعة من 3 غرف بالقرب من مركز المدينة"
+      },
+      "area": 1450,
+      "locationId": "65b8f9e0a6c1d9c12f8a1234",
+  
+      "location": {
+        "type": "kannur",
+        "coordinates": [55.2708, 25.2048]
+      },
+  
+      "landmark": {
+        "en": "Near Metro Station",
+        "ar": "بالقرب من محطة المترو"
+      },
+  
+      "propertyId": null,
+      "price": "12500",
+      "availableFrom": "2026-02-01",
+      "possessionStatus": 1
+    },
+  
+    "keyFeatures": {
+      "propertyAge": 5,
+      "noOfBedroom": 3,
+      "noOfBathroom": 3,
+      "furnishing": 2
+    },
+  
+    "amenitiesId": [
+      "65b8f9e0a6c1d9c12f8a5678",
+      "65b8f9e0a6c1d9c12f8a9876"
+    ],
+  
+    "coverImage": "uploads/properties/cover-123.jpg",
+    "galleryImages": [
+      "uploads/properties/img1.jpg",
+      "uploads/properties/img2.jpg",
+      "uploads/properties/img3.jpg"
+    ],
+  
+     "ownerId": "65b8f9e0a6c1d9c12f8a2222"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

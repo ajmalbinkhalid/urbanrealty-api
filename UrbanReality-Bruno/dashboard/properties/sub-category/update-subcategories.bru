@@ -1,0 +1,26 @@
+meta {
+  name: update-subcategories
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/admin/categories/6957a04c71944a4a73c62010
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": {
+      "en": "Luxur Villa",
+      "ar": "فيلا فاخرة"
+    },
+    "categoryId": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,28 @@
+meta {
+  name: privacy-policy
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/app/user/cms/privacy-policy?locale=en
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  locale: en
+}
+
+body:multipart-form {
+  termsAndConditions.pageTitle.en: How It Worked
+  termsAndConditions.pageTitle.ar: كيف يعمل
+  type: 1
+  termsAndConditions.description.en: descriptionen
+  termsAndConditions.description.ar: descriptionen
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

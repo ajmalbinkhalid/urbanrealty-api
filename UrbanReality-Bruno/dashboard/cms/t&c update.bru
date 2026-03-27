@@ -1,0 +1,261 @@
+meta {
+  name: t&c update
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/admin/cms
+  body: json
+  auth: inherit
+}
+
+params:query {
+  : 
+}
+
+body:json {
+  {
+    "type": "2",
+    "termsAndConditions": {
+      "pageId": "terms-and-conditions",
+      "pageTitle": {
+        "en": "Terms and Conditions",
+        "ar": "الشروط والأحكام"
+      },
+      "description": {
+        "en": "Last Updated: January 1, 2026\n\nWelcome to our platform. These Terms and Conditions govern your use of our website and services. By accessing or using our services, you agree to be bound by these terms.\n\n1. Acceptance of Terms\nBy accessing this website, you confirm that you have read, understood, and agree to comply with these Terms and Conditions.\n\n2. Eligibility\nYou must be at least 18 years old or have parental/guardian consent to use our services.\n\n3. User Accounts\nYou are responsible for maintaining the confidentiality of your account credentials.\nYou agree to provide accurate and complete information.\nWe reserve the right to suspend or terminate accounts that violate these terms.\n\n4. Use of Services\nYou agree not to use the platform for unlawful purposes.\nYou must not attempt to gain unauthorized access to our systems.\n\n5. Intellectual Property\nAll content, trademarks, and materials are the property of the company unless otherwise stated.\n\n6. Limitation of Liability\nWe are not liable for indirect or consequential damages arising from the use of our services.\n\n7. Termination\nWe reserve the right to terminate access if users violate these Terms.\n\n8. Governing Law\nThese Terms shall be governed by the laws of India.\n\n9. Contact Us\nEmail: support@example.com\nPhone: +91 99999 99999",
+        "ar": "آخر تحديث: 1 يناير 2026\n\nمرحبًا بكم في منصتنا. تحكم هذه الشروط والأحكام استخدامكم لموقعنا وخدماتنا. من خلال الوصول إلى خدماتنا أو استخدامها، فإنكم توافقون على الالتزام بهذه الشروط.\n\n1. قبول الشروط\nمن خلال استخدام هذا الموقع، فإنك تقر بأنك قرأت وفهمت ووافقت على هذه الشروط والأحكام.\n\n2. الأهلية\nيجب أن يكون عمرك 18 عامًا على الأقل أو لديك موافقة ولي الأمر لاستخدام خدماتنا.\n\n3. حسابات المستخدمين\nأنت مسؤول عن الحفاظ على سرية بيانات حسابك.\nيجب عليك تقديم معلومات صحيحة وكاملة.\nنحتفظ بالحق في تعليق أو إنهاء الحسابات المخالفة.\n\n4. استخدام الخدمات\nيُحظر استخدام المنصة لأغراض غير قانونية.\nيجب عدم محاولة الوصول غير المصرح به إلى أنظمتنا.\n\n5. الملكية الفكرية\nجميع المحتويات والعلامات التجارية والمواد مملوكة للشركة ما لم يُذكر خلاف ذلك.\n\n6. تحديد المسؤولية\nلسنا مسؤولين عن أي أضرار غير مباشرة أو تبعية ناتجة عن استخدام خدماتنا.\n\n7. إنهاء الخدمة\nنحتفظ بالحق في إنهاء الوصول في حال انتهاك هذه الشروط.\n\n8. القانون الحاكم\nتخضع هذه الشروط لقوانين الهند.\n\n9. تواصل معنا\nالبريد الإلكتروني: support@example.com\nالهاتف: +91 99999 99999"
+      }
+     
+    }
+  }
+  
+}
+
+body:multipart-form {
+  privacyPolicy.pageTitle.en: Privacy policy
+  privacyPolicy.pageTitle.ar: سياسة الخصوصية
+  type: 1
+  privacyPolicy.description.en: '''
+    <p><strong>Last Updated:</strong> January 1, 2026</p>
+    
+    <p>Welcome to our platform. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.</p>
+    
+    <h3>1. Information We Collect</h3>
+    
+    <p>We may collect the following types of information:</p>
+    
+    <p><strong>a) Personal Information</strong></p>
+    <ul>
+      <li>Full name</li>
+      <li>Email address</li>
+      <li>Phone number</li>
+      <li>Profile picture</li>
+    </ul>
+    
+    <p><strong>b) Technical Information</strong></p>
+    <ul>
+      <li>IP address</li>
+      <li>Browser type and version</li>
+      <li>Device information</li>
+      <li>Operating system</li>
+    </ul>
+    
+    <p><strong>c) Usage Data</strong></p>
+    <ul>
+      <li>Pages visited</li>
+      <li>Time spent on pages</li>
+      <li>Click activity</li>
+      <li>Referring URLs</li>
+    </ul>
+    
+    <h3>2. How We Use Your Information</h3>
+    
+    <p>We use your information to:</p>
+    <ul>
+      <li>Provide and maintain our services</li>
+      <li>Improve user experience</li>
+      <li>Send important updates</li>
+      <li>Respond to customer support requests</li>
+      <li>Prevent fraud and ensure security</li>
+    </ul>
+    
+    <h3>3. Cookies and Tracking Technologies</h3>
+    
+    <p>We use cookies and similar tracking technologies to:</p>
+    <ul>
+      <li>Remember user preferences</li>
+      <li>Analyze traffic</li>
+      <li>Improve functionality</li>
+    </ul>
+    
+    <p>You can disable cookies in your browser settings, but some features may not work properly.</p>
+    
+    <h3>4. Data Sharing and Disclosure</h3>
+    
+    <p>We do not sell your personal data. However, we may share information with:</p>
+    <ul>
+      <li>Service providers</li>
+      <li>Legal authorities (if required by law)</li>
+      <li>Business partners (with your consent)</li>
+    </ul>
+    
+    <h3>5. Data Security</h3>
+    
+    <p>We implement appropriate technical and organizational security measures to protect your data. However, no method of transmission over the internet is 100% secure.</p>
+    
+    <h3>6. Data Retention</h3>
+    
+    <p>We retain personal information only as long as necessary for the purposes outlined in this policy, unless a longer retention period is required by law.</p>
+    
+    <h3>7. Your Rights</h3>
+    
+    <p>Depending on your location, you may have the right to:</p>
+    <ul>
+      <li>Access your personal data</li>
+      <li>Correct inaccurate information</li>
+      <li>Request deletion of your data</li>
+      <li>Withdraw consent</li>
+    </ul>
+    
+    <p>To exercise these rights, contact us at:</p>
+    <p><strong>Email:</strong> support@example.com</p>
+    
+    <h3>8. Third-Party Links</h3>
+    
+    <p>Our website may contain links to third-party websites. We are not responsible for their privacy practices.</p>
+    
+    <h3>9. Changes to This Policy</h3>
+    
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+    
+    <h3>10. Contact Us</h3>
+    
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    
+    <p><strong>Email:</strong> support@example.com</p>
+    <p><strong>Phone:</strong> +91 99999 99999</p>
+  '''
+  privacyPolicy.description.ar: '''
+    سياسة الخصوصية
+    
+    آخر تحديث: 1 يناير 2026
+    
+    نحن نحرص على حماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا لمعلوماتك عند استخدامك لموقعنا وخدماتنا.
+    
+    1. المعلومات التي نقوم بجمعها
+    
+    قد نقوم بجمع الأنواع التالية من المعلومات:
+    
+    أ) المعلومات الشخصية
+    
+    الاسم الكامل
+    
+    عنوان البريد الإلكتروني
+    
+    رقم الهاتف
+    
+    الصورة الشخصية
+    
+    ب) المعلومات التقنية
+    
+    عنوان IP
+    
+    نوع المتصفح وإصداره
+    
+    معلومات الجهاز
+    
+    نظام التشغيل
+    
+    ج) بيانات الاستخدام
+    
+    الصفحات التي تمت زيارتها
+    
+    مدة البقاء في الصفحة
+    
+    نشاط النقر
+    
+    روابط الإحالة
+    
+    2. كيفية استخدام المعلومات
+    
+    نستخدم معلوماتك من أجل:
+    
+    تقديم خدماتنا وتحسينها
+    
+    تحسين تجربة المستخدم
+    
+    إرسال التحديثات المهمة
+    
+    الرد على استفسارات الدعم الفني
+    
+    منع الاحتيال وضمان الأمان
+    
+    3. ملفات تعريف الارتباط (Cookies)
+    
+    نستخدم ملفات تعريف الارتباط من أجل:
+    
+    حفظ تفضيلات المستخدم
+    
+    تحليل حركة المرور
+    
+    تحسين وظائف الموقع
+    
+    يمكنك تعطيل ملفات تعريف الارتباط من إعدادات المتصفح، ولكن قد لا تعمل بعض الميزات بشكل صحيح.
+    
+    4. مشاركة المعلومات
+    
+    نحن لا نقوم ببيع بياناتك الشخصية. ومع ذلك، قد نشارك المعلومات مع:
+    
+    مزودي الخدمات
+    
+    الجهات القانونية عند الطلب
+    
+    شركاء الأعمال (بموافقتك)
+    
+    5. حماية البيانات
+    
+    نطبق إجراءات أمنية تقنية وتنظيمية مناسبة لحماية بياناتك. ومع ذلك، لا توجد وسيلة نقل عبر الإنترنت آمنة بنسبة 100٪.
+    
+    6. الاحتفاظ بالبيانات
+    
+    نحتفظ بالمعلومات الشخصية فقط للمدة اللازمة لتحقيق الأغراض المذكورة في هذه السياسة، ما لم يتطلب القانون فترة احتفاظ أطول.
+    
+    7. حقوقك
+    
+    حسب موقعك الجغرافي، قد يكون لديك الحق في:
+    
+    الوصول إلى بياناتك الشخصية
+    
+    تصحيح المعلومات غير الدقيقة
+    
+    طلب حذف بياناتك
+    
+    سحب الموافقة
+    
+    للاستفسار، يرجى التواصل معنا عبر:
+    support@example.com
+    
+    8. روابط الجهات الخارجية
+    
+    قد يحتوي موقعنا على روابط لمواقع خارجية. نحن غير مسؤولين عن سياسات الخصوصية الخاصة بهم.
+    
+    9. التعديلات على هذه السياسة
+    
+    قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تاريخ التحديث الجديد.
+    
+    10. تواصل معنا
+    
+    إذا كانت لديك أي أسئلة بخصوص سياسة الخصوصية:
+    
+    البريد الإلكتروني: support@example.com
+    
+    الهاتف: +91 99999 99999
+  '''
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: get-profile
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/web/user/auth/get-profile
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token:  "email": "shahamabbbreeee.test5@urbanrealty.com",
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,35 @@
+meta {
+  name: GetOne-Package
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/admin/packages/6958ebe07789c335b50adc59
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjk0ZmRkMTQzZjAzNGRlOTA4ZjhiMjNhIiwicm9sZSI6InN1cGVyLWFkbWluIiwiaWRlbnRpZmllciI6eyJpZGVudGlmaWVyIjoiYWRtaW5AdXJiYW5yZWFsdHkuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6NX0sImlhdCI6MTc2NzQzNTA1NSwiZXhwIjoyMzcyMjM1MDU1fQ.zjAJccB7CVRFIn8Ow8Vgop7Y0Af4oXgI3DppiawOTUE
+}
+
+body:json {
+  {
+    "type": "promotion",
+    "subscriptionId": 2001,
+    "name": {
+      "en": "Featured Boosterss",
+      "ar": "تعزيز مميز"
+    },
+    "price": 3000,
+    "validity": 7,
+    "noOfFeaturedProperty": 3
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

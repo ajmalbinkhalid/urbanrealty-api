@@ -1,0 +1,20 @@
+meta {
+  name: resend-otp
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/app/agency/auth/resend-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJsb2dpbiIsImlkZW50aWZpZXJEYXRhIjp7InNvdXJjZSI6MSwiaWRlbnRpZmllciI6InNoYXp6ei50ZXN0M0B1cmJhbnJlYWx0eS5jb20iLCJpZGVudGlmaWVyVHlwZSI6ImVtYWlsIn0sImlhdCI6MTc2NjU2OTAzOCwiZXhwIjoxNzY2NTY5MjE4fQ.V4F8asLf_refn7fj4m5f_MX_gSvP-0CJFbNWsfEXVIY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

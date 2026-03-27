@@ -1,0 +1,20 @@
+meta {
+  name: get-properties -details
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/admin/properties/69673fff2ca43c56c7799fd9
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  ~lo: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

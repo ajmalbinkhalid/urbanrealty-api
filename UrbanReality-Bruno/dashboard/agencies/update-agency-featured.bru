@@ -1,0 +1,28 @@
+meta {
+  name: update-agency-featured
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{baseUrl}}/admin/agencies/695387c743bc9df9e6647484/featured
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "status": "accept" 
+  //    "status": "reject" 
+  }
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

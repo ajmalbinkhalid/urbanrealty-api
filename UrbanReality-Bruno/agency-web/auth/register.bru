@@ -1,0 +1,31 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/agency/auth/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "test07",
+    "lastName": "07",
+    "email": "test7@example.com",
+    "phone": {
+      "phoneCode": "+91",
+      "phoneNumber": "8719419175"
+    },
+    "company": "compony",
+    "cRNumber": "CR-20264-085"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

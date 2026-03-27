@@ -1,0 +1,31 @@
+meta {
+  name: create-subcategory
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/admin/categories/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjk0ZmRkMTQzZjAzNGRlOTA4ZjhiMjNhIiwicm9sZSI6InN1cGVyLWFkbWluIiwiaWRlbnRpZmllciI6eyJpZGVudGlmaWVyIjoiYWRtaW5AdXJiYW5yZWFsdHkuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6NX0sImlhdCI6MTc2NzM0NzU1MCwiZXhwIjoyMzcyMTQ3NTUwfQ.4rmYo2BUGpYE7tX1uo0H7ns6_BK82SY6DOnPqGkmLww
+}
+
+body:json {
+  {
+    "name": {
+      "en": "Office",
+      "ar": "مكتب"
+    },
+    "categoryId": 2
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

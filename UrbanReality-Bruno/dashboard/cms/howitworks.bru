@@ -1,0 +1,35 @@
+meta {
+  name: howitworks
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/admin/cms/edit
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  howItWorks.pageTitle.en: How It Workmmm
+  howItWorks.pageTitle.ar: كيف يعمل
+  howItWorks.title1.title.en: Choose Propertymmm
+  howItWorks.title1.title.ar: اختر العقار
+  howItWorks.title2.title.en: Contact Agentmmm
+  howItWorks.title2.title.ar: تواصل مع الوكيل
+  howItWorks.title3.title.en: Visit Property,mmm
+  howItWorks.title3.title.ar: قم بزيارة العقار
+  howItWorks.title4.title.en: Finalize Dealmmm
+  howItWorks.title4.title.ar: إتمام الصفقة
+  howItWorks.image: @file(C:\Users\ABHINAND\Downloads\OIP (1).jpg)
+  howItWorks.title1.icon: @file(C:\Users\ABHINAND\Downloads\OIP (1).jpg)
+  howItWorks.title2.icon: @file(C:\Users\ABHINAND\Downloads\OIP (1).jpg)
+  howItWorks.title3.icon: @file(C:\Users\ABHINAND\Downloads\OIP (1).jpg)
+  howItWorks.title4.icon: @file(C:\Users\ABHINAND\Downloads\OIP (1).jpg)
+  type: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

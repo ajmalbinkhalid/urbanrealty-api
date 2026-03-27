@@ -1,0 +1,21 @@
+meta {
+  name: delete-user
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/admin/users/695387c743bc9df9e6647484
+  body: none
+  auth: inherit
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

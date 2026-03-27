@@ -1,0 +1,20 @@
+meta {
+  name: toggle-favorite
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/user/favorites/6968ac0ff3eb118184d0930d
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUzOTVlNTRmZmQ4NDI2MjM0ZDJjM2YiLCJpZGVudGlmaWVyIjp7ImlkZW50aWZpZXIiOiJ6dWhhMi50ZXN0NUB1cmJhbnJlYWx0eS5jb20iLCJpZGVudGlmaWVyVHlwZSI6ImVtYWlsIiwic291cmNlIjozfSwiaWF0IjoxNzY4NDcxMjc5LCJleHAiOjIzNzMyNzEyNzl9.Ok365ECogb3crYBG2p5R1fJSU0IRmgzTo28Ih7l372g
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

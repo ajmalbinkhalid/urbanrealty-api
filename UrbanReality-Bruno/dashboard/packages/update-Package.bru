@@ -1,0 +1,37 @@
+meta {
+  name: update-Package
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/admin/packages/697db3817e1d0aa31ee9fb7a
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjk0ZmRkMTQzZjAzNGRlOTA4ZjhiMjNhIiwicm9sZSI6InN1cGVyLWFkbWluIiwiaWRlbnRpZmllciI6eyJpZGVudGlmaWVyIjoiYWRtaW5AdXJiYW5yZWFsdHkuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6NX0sImlhdCI6MTc2NzQzNTA1NSwiZXhwIjoyMzcyMjM1MDU1fQ.zjAJccB7CVRFIn8Ow8Vgop7Y0Af4oXgI3DppiawOTUE
+}
+
+body:json {
+  {
+    "type": 2, 
+    "userType": "1",
+    "name": {
+      "en": "Premium Plan",
+      "ar": "الخطة المميزة"
+    },
+    "price": 299.99,
+    "validity": 30,
+    "flatPrice": 250.00,
+    "offerText": "Get 20% off on your first month!",
+    "noOfProperties": 10,
+    "noOfFeaturedProperty": 5
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

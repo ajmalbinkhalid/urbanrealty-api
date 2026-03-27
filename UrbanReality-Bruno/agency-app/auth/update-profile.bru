@@ -1,0 +1,24 @@
+meta {
+  name: update-profile
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/app/agency/auth/get-profile
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VuY3lJZCI6IjY5NTRjOWMwYmE4Y2M5NTYxYzc1ZGMxOSIsImFnZW5jeVRlYW1JZCI6IjY5NTRjOWMwYmE4Y2M5NTYxYzc1ZGMxYiIsInJvbGUiOiJhZG1pbiIsImlkZW50aWZpZXIiOnsiaWRlbnRpZmllciI6ImNvMDBAZ21haWwuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6MX0sImlhdCI6MTc2NzQxODkzMSwiZXhwIjoyMzcyMjE4OTMxfQ.BeY4gbmkFaTC6DZSA87IUw9zxjIM_asdAvFF_GE8pKg
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:4500/api
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

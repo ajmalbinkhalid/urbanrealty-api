@@ -1,0 +1,21 @@
+meta {
+  name: toggle-properties -featured
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{baseUrl}}/admin/properties/69708120037f53ad3df155a7/toggle-verification/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  status: accept
+  remarks: failed property
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

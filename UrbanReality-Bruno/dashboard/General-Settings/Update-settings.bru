@@ -1,0 +1,33 @@
+meta {
+  name: Update-settings
+  type: http
+  seq: 2
+}
+
+patch {
+  url: {{baseUrl}}/admin/general-settings/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Urban Realty",
+    "email": "info@urbanrealty.com",
+    "phone": {
+      "phoneCode": "+971",
+      "phoneNumber": "501234567"
+    },
+    "whatsapp": {
+      "phoneCode": "+971",
+      "phoneNumber": "501234567"
+    },
+    "about": "Urban Realty is a trusted real estate platform.",
+    "currency": "AED"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

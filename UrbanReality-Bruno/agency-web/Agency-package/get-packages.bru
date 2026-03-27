@@ -1,0 +1,24 @@
+meta {
+  name: get-packages
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/app/agency/packages/?type=promotion
+  body: none
+  auth: bearer
+}
+
+params:query {
+  type: promotion
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZ2VuY3lJZCI6IjY5NThhNWNjZTE4ZDQwODIyMjg4OTFmYSIsImFnZW5jeVRlYW1JZCI6IjY5NThhNWNjZTE4ZDQwODIyMjg4OTFmYyIsInJvbGUiOiJhZG1pbiIsImlkZW50aWZpZXIiOnsiaWRlbnRpZmllciI6ImFzaWYwMDg0dGVzdDNAdXJiYW5yZWFsdHkuY29tIiwiaWRlbnRpZmllclR5cGUiOiJlbWFpbCIsInNvdXJjZSI6MX0sImlhdCI6MTc2Nzc3NzExMSwiZXhwIjoyMzcyNTc3MTExfQ.NkTIzJrmxtq49ig6Yr6VGxRmhX1qxTbO7TdKDACfpZ8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

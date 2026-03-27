@@ -1,0 +1,26 @@
+meta {
+  name: verify-agency
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/agency/auth/verify-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJyZWdpc3Rlci1waG9uZSIsImFnZW5jeURhdGEiOnsiZmlyc3ROYW1lIjoidGVzdDA3IiwibGFzdE5hbWUiOiIwNyIsImVtYWlsIjoidGVzdDdAZXhhbXBsZS5jb20iLCJwaG9uZSI6eyJwaG9uZUNvZGUiOiIrOTEiLCJwaG9uZU51bWJlciI6Ijg3MTk0MTkxNzUifSwiY29tcGFueSI6ImNvbXBvbnkiLCJjUk51bWJlciI6IkNSLTIwMjY0LTA4NSJ9LCJpZGVudGlmaWVyRGF0YSI6eyJpZGVudGlmaWVyIjoiKzkxIDg3MTk0MTkxNzUiLCJpZGVudGlmaWVyVHlwZSI6InBob25lIiwic291cmNlIjoyfSwiaWF0IjoxNzY4OTg0NzQyLCJleHAiOjE3NjkyODQ3NDJ9.gHtCthKWkLgTHJELCmCpNihFuRqFvbEny09WMKO5z0g
+}
+
+body:json {
+  {
+    "otp": "7052"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,26 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/app/user/auth/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "zuha",
+    "lastName": "ghj",
+    "email": "zuha2.test5@urbanrealty.com",
+    "phone": "987678465502"
+    
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

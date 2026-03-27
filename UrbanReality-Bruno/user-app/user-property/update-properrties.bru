@@ -1,0 +1,38 @@
+meta {
+  name: update-properrties
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/app/user/properties/696769205f6fddc571cc347a
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  purpose: 2
+  propertyCategoryId: 3
+  propertyInformation.title.en: Luxyrt
+  propertyInformation.title.ar: \erاخر
+  propertyInformation.description.en: Nicegh
+  propertyInformation.description.ar: ereيلة
+  propertyInformation.landmark.en: Neaww
+  propertyInformation.landmark.ar: wتو
+  propertyInformation.locationId: 6960d73ad0e7ccc1adcdcc72
+  propertyInformation.location.latitude: 25.2048
+  propertyInformation.location.longitude: 55.2708
+  propertyInformation.area: 1200
+  propertyInformation.propertySubCategoryId: 69672d91cf40a2111c3fea45
+  propertyInformation.price: 250000
+  propertyInformation.possessionStatus: 1
+  amenities: 69638f55bd7ecef027332b42
+  coverImage: @file(C:\Users\ACER\Downloads\image 47.png)
+  galleryImages[]: @file(C:\Users\ACER\Downloads\Frame 1577 (1).png)
+  amenities: 69638f55bd7ecef027332b42
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

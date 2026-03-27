@@ -1,0 +1,26 @@
+meta {
+  name: resend-otp
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/agency/auth/verify-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJsb2dpbiIsImlkZW50aWZpZXJEYXRhIjp7InNvdXJjZSI6MiwiaWRlbnRpZmllciI6ImFiaGluYW5kLnRlc3Q0QHVyYmFucmVhbHR5LmNvbSIsImlkZW50aWZpZXJUeXBlIjoiZW1haWwifSwiaWF0IjoxNzY2NDA3NjA1LCJleHAiOjE3NjY0MDc3ODV9.-uMpoxzOJVlecaZGCIIbQOUb5KKL9UkeUfTcTiDbmEU
+}
+
+body:json {
+  {
+    "otp": "5128"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

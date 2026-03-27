@@ -1,0 +1,20 @@
+meta {
+  name: add-favorite
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/app/user/favorites/69676584b2d49ec5821c6ece
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~favorite: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

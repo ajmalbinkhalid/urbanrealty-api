@@ -1,0 +1,23 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/user/auth/request-otp
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  
+  "email":
+  "zuha1.test5@urbanrealty.com"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

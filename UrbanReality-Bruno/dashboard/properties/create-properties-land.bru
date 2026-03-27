@@ -1,0 +1,94 @@
+meta {
+  name: create-properties-land
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/admin/properties/?formSubmissionType=1
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  formSubmissionType: 1
+}
+
+body:json {
+  {
+    "purpose": 1,
+    "propertyCategoryId": 1,
+    "propertyInformation": {
+      "title": {
+        "en": "Luxury Villa",
+        "ar": "فيلا فاخرة"
+      },
+      "description": {
+        "en": "Beautiful sea view villa",
+        "ar": "فيلا مطلة على البحر"
+      },
+      "locationId": "69623baed1d336f65302690c",
+      "location": {
+        "type": "Point",
+        "coordinates": [55.2708, 25.2048]
+      },
+      "landmark": {
+        "en": "Near City Mall",
+        "ar": "بالقرب من المول"
+      },
+      "area": 250,
+      "price": "1200000",
+      "possessionStatus": 1,
+      "availableFrom": "2026-02-01"
+    },
+    "keyFeatures": {
+      "noOfBedroom": 4,
+      "noOfBathroom": 5,
+      "propertyAge": 3,
+      "furnishing": 2
+    },
+    "amenities": [
+      "69638fd9bd7ecef027332b51"
+    ]
+  }
+  
+}
+
+body:multipart-form {
+  purpose: 2
+  propertyCategoryId: 2
+  propertyInformation.title.en: Luxur2 commial Apartment
+  propertyInformation.title.ar: شقة جميلة في موقع مميز
+  propertyInformation.description.en: Lux2ury mmercial Apartment
+  propertyInformation.description.ar: شقة جميلة في موقع مميز
+  propertyInformation.landmark.en: Near ciy
+  propertyInformation.landmark.ar: شقة جميلة في موقع مميز
+  propertyInformation.area: 250
+  propertyInformation.price: 1200000
+  propertyInformation.possessionStatus: 1
+  propertyInformation.locationId: 69623baed1d336f65302690c
+  propertyInformation.location.latitude: 55.2708
+  propertyInformation.location.longitude: 25.2048
+  amenities: 69638fd9bd7ecef027332b51
+  coverImage: @file(C:\Users\ABHINAND\Downloads\image-svgrepo-com.svg)
+  amenities: 69638f55bd7ecef027332b42
+  galleryImages[]: @file(C:\Users\ABHINAND\Downloads\image-svgrepo-com.svg)
+  propertyInformation.propertySubCategoryId: 696a88e813e569226534ed1e
+  keyFeatures.noOfBedroom: 2
+  keyFeatures.propertyAge: 5
+  keyFeatures.floorNumber: 4
+  keyFeatures.totalFloor: 3
+  keyFeatures.customerShip: 1
+  keyFeatures..propertyCondition: 2
+  keyFeatures.locationHub: 2
+  keyFeatures.furnishing: 1
+  keyFeatures.propertyCondition: 2
+  keyFeatures.zoneType: 2
+  ~propertyInformation.availableFrom: 2026-03-01
+  ~propertyInformation.propertyId: 695dfeeeb5f236dd024b9a75
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

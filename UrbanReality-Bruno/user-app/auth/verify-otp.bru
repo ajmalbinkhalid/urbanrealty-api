@@ -1,0 +1,26 @@
+meta {
+  name: verify-otp
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/app/user/auth/verify-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJsb2dpbiIsImlkZW50aWZpZXJEYXRhIjp7ImlkZW50aWZpZXIiOiJ6dWhhMi50ZXN0NUB1cmJhbnJlYWx0eS5jb20iLCJpZGVudGlmaWVyVHlwZSI6ImVtYWlsIiwic291cmNlIjozfSwiaWF0IjoxNzY4ODk0OTcyLCJleHAiOjE3NjkxOTQ5NzJ9.awf2z-eF8zh-VE5v5BTg_8OYtf19Rj0Adpaxr-upAiE
+}
+
+body:json {
+  {
+    "otp": "8285"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

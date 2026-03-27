@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "lib": ["ES2020"],
+    "moduleResolution": "node",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "noEmitOnError": false,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@database/*": ["./src/database/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@enum/*": ["./src/enum/*"],
+      "@services/*": ["src/services/*"],
+      "@types": ["./src/types"],
+      "@env": ["./env.ts"]
+    },
+    "strictNullChecks": true
+  },
+  "include": ["src/**/*", "index.ts", "env.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,78 @@
+meta {
+  name: update-properties-land
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{baseUrl}}/admin/properties/69673af55fa0a98d6fe3ac16
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "purpose": 1,
+    "propertyCategoryId": 1,
+    "propertyInformation": {
+      "title": {
+        "en": "Luxury Villa",
+        "ar": "فيلا فاخرة"
+      },
+      "description": {
+        "en": "Beautiful sea view villa",
+        "ar": "فيلا مطلة على البحر"
+      },
+      "locationId": "69623baed1d336f65302690c",
+      "location": {
+        "type": "Point",
+        "coordinates": [55.2708, 25.2048]
+      },
+      "landmark": {
+        "en": "Near City Mall",
+        "ar": "بالقرب من المول"
+      },
+      "area": 250,
+      "price": "1200000",
+      "possessionStatus": 1,
+      "availableFrom": "2026-02-01"
+    },
+    "keyFeatures": {
+      "noOfBedroom": 4,
+      "noOfBathroom": 5,
+      "propertyAge": 3,
+      "furnishing": 2
+    },
+    "amenities": [
+      "69638fd9bd7ecef027332b51"
+    ]
+  }
+  
+}
+
+body:multipart-form {
+  purpose: 1
+  propertyCategoryId: 3
+  propertyInformation.title.en: Sea view
+  propertyInformation.title.ar: بالقرب من المول
+  propertyInformation.description.en: Sea view villa
+  propertyInformation.description.ar: فيلا مطلة على البحر
+  propertyInformation.landmark.en: Near Mall
+  propertyInformation.landmark.ar: بالقرب من المول
+  propertyInformation.area: 250
+  propertyInformation.price: 1200000
+  propertyInformation.possessionStatus: 1
+  propertyInformation.locationId: 69623baed1d336f65302690c
+  propertyInformation.location.latitude: 55.2708
+  propertyInformation.location.longitude: 25.2048
+  amenities: 69638fd9bd7ecef027332b51
+  coverImage: @file(C:\Users\ABHINAND\Downloads\WhatsApp Image 2025-12-14 at 23.59.00_16c987e6.jpg)
+  propertyInformation.availableFrom: 2026-03-01
+  propertyInformation.propertyId: 695dfeeeb5f236dd024b9a75
+  amenities: 69638f55bd7ecef027332b42
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,30 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/web/user/auth/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "Abh",
+    "lastName": "Kumar",
+    "email": "shahamaa.test5@urbanrealty.com",
+    "phone":{
+      "phoneCode":"91",
+      "phoneNumber":"98767846550"
+      
+  } 
+    
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

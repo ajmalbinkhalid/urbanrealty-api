@@ -1,0 +1,46 @@
+meta {
+  name: create-properties-Commercial
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/app/user/properties/create
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  purpose: 2
+  propertyCategoryId: 2
+  propertyInformation.title.en: Luxury Flat
+  propertyInformation.title.ar: شقة فاخرة
+  propertyInformation.description.en: Nice flat
+  propertyInformation.description.ar: شقة جميلة
+  propertyInformation.landmark.en: Near Metro
+  propertyInformation.landmark.ar: قريب من المترو
+  propertyInformation.locationId: 6960d73ad0e7ccc1adcdcc72
+  propertyInformation.location.latitude: 25.2048
+  propertyInformation.location.longitude: 55.2708
+  propertyInformation.area: 1200
+  propertyInformation.propertySubCategoryId: 69672d91cf40a2111c3fea45
+  propertyInformation.price: 250000
+  propertyInformation.possessionStatus: 1
+  keyFeatures.totalFloor: 10
+  keyFeatures.propertyAge: 5
+  keyFeatures.customerShip: 1
+  keyFeatures.propertyCondition: 1
+  keyFeatures.zoneType: 2
+  keyFeatures.locationHub: 3
+  keyFeatures.furnishing: 2
+  amenities: 69638f55bd7ecef027332b42
+  coverImage: @file(C:\Users\ACER\Downloads\image 47.png)
+  galleryImages[]: @file(C:\Users\ACER\Downloads\Frame 1577 (1).png)
+  keyFeatures.floorNumber: 2
+  amenities: 69638f55bd7ecef027332b42
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

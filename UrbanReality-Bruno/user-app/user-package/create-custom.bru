@@ -1,0 +1,29 @@
+meta {
+  name: create-custom
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/app/user/packages/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUzOTVlNTRmZmQ4NDI2MjM0ZDJjM2YiLCJpZGVudGlmaWVyIjp7ImlkZW50aWZpZXIiOiJ6dWhhMi50ZXN0NUB1cmJhbnJlYWx0eS5jb20iLCJpZGVudGlmaWVyVHlwZSI6ImVtYWlsIiwic291cmNlIjozfSwiaWF0IjoxNzcwMzYxNTg5LCJleHAiOjIzNzUxNjE1ODl9.pPbFYJ2djjSP65gfkafpWubbVV5IdcR-CMjdg89Hkgo
+}
+
+body:json {
+  {
+    "noOfProperties": 10,
+    "noOfFeaturedProperties": 3,
+    "validity": 30
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

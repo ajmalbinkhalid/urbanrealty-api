@@ -1,0 +1,30 @@
+meta {
+  name: toggleStatus
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/admin/amenity/6957931b41e395323116bbb1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": {
+      "en": "Gym",
+      "ar": "نادي رياضي"
+    }
+  }
+  
+}
+
+body:multipart-form {
+  name.en: Test
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

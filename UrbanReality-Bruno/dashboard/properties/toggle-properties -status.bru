@@ -1,0 +1,20 @@
+meta {
+  name: toggle-properties -status
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/admin/properties/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  ~lo: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

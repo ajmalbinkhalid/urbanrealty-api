@@ -1,0 +1,30 @@
+meta {
+  name: update-user-details
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/admin/users/695387c743bc9df9e6647484
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "Testing Success",
+    "lastName": "Tester",
+    "phoneNumber": "99959995995",
+    "email": "test5@test.com"
+  }
+}
+
+body:multipart-form {
+  firstName: Test
+  lastName: Tester
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

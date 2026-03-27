@@ -1,0 +1,29 @@
+meta {
+  name: Update-settings copy
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/admin/general-settings/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  name.en: Urban Realty
+  email: info@urbanrealty.com
+  phone.phoneCode: +91
+  phone.phoneNumber: 1234567890
+  whatsapp.phoneCode: +91
+  whatsapp.phoneNumber: 7894563575
+  about.en: dfghjklkjhgfdfghjkl
+  about.ar: ghjkjhghdedjhb
+  logo: @file(C:\Users\ABHINAND\Downloads\image-svgrepo-com.svg)
+  name.ar: gghjkelkejiugb
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
